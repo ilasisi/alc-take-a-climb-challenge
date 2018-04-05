@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Contacts Book - ALC Challenge</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="main-container">
+    <div class="header">
+    <h1>Contacts Book</h1>
+    <h4>ALC Take a Climb Challenge</h4>
+    </div>
+    <div class="contact-container">
+    <div class="table-container">
+	<table id="details-table">
+		<tr id="contacts-head">
+			<th>ID</th>
+			<th>Surname</th>
+            <th>Other names</th>
+            <th>Phone Number</th>
+			<th>Email Address</th>
+			<th>Actions</th>
+		</tr>
+	</table>
+    </div>
+    <div class="form-container">
+	<form id="details-form">
+		<div class="item text">
+			<label>Surname:</label>
+			<div class="field">
+                <input type="text" name="first_name" />
+            </div>
+		</div>
+		<div class="item text">
+			<label>Other names:</label>
+			<div class="field">
+                <input type="text" name="last_name" />
+            </div>
+        </div>
+        <div class="item text">
+                <label>Phone Number:</label>
+                <div class="field">
+                    <input type="number" name="phone_number" />
+                </div>
+        </div>
+		<div class="item text">
+			<label>Email Address:</label>
+			<div class="field">
+                <input type="text" name="email" />
+            </div>
+		</div>
+		<div class="button-wrapper">
+			<div class="item button">
+				<div class="field">
+                    <input type="button" id="reset_button" value="Reset" />
+                </div>
+			</div>
+			<div class="item button button-default">
+				<div class="field">
+                    <input type="submit" id="save_button" value="Save" />
+                </div>
+			</div>
+		</div>
+		<input type="hidden" name="id_entry" value="0" />
+	</form>
+</div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2018 - ALC Take a Climb Challenge by <a href="http://www.github.com/movicson">Lasisi Ibrahim Gbenga</a></p>
+    </div>
+</div>
+    
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
